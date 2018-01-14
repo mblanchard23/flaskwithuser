@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+<h1>User Profile</h1>
+{% if current_user.is_authenticated %}
+Name: {{  current_user.name }} <br>
+Email: {{ current_user.email }}<br>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page with Links to things</title>
+</head>
+<body>
+{% if current_user.is_authenticated %}
+<h3>Welcome {{ current_user.name }}</h3>
+{% endif %}
+
+<a href="http://127.0.0.1/login">Test Login Page</a><br>
+<a href="http://127.0.0.1/signup">Test Signup Page</a><br>
+<a href="http://127.0.0.1/profile">Test Profile Page</a>
+</body>
+</html>
